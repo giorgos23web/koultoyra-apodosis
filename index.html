@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Το Ιστολόγιο του Γιώργου</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        .post-card {
+            background-color: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .post-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .post-tag {
+            display: inline-block;
+            background-color: #e0e7ff;
+            color: #4338ca;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Κεφαλίδα -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Το Ιστολόγιο του Γιώργου</a>
+            <div>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-semibold px-3">Αρχική</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 font-semibold px-3">Σχετικά με μένα</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Κύριο Περιεχόμενο -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Εισαγωγικό Κείμενο -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black mb-4">Καλώς ήρθες στο Ιστολόγιό μου</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Εδώ θα βρεις τις σκέψεις, τις αναλύσεις και τα projects μου πάνω σε θέματα τεχνολογίας, παραγωγικότητας και προσωπικής ανάπτυξης.</p>
+        </section>
+
+        <!-- Λίστα με τις Δημοσιεύσεις -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 border-b-4 border-blue-500 inline-block pb-2">Τελευταίες Δημοσιεύσεις</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Κάρτα Δημοσίευσης 1 (Αυτή που έχεις ήδη φτιάξει) -->
+                <div class="post-card">
+                    <a href="koultoyra-apodosis.html">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Εικόνα+Άρθρου" alt="Εικόνα για την κουλτούρα υψηλής απόδοσης" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="post-tag">Management</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2">Πώς να Χτίσεις μια Κουλτούρα Υψηλής Απόδοσης</h3>
+                            <p class="text-gray-600 text-sm">Μια οπτικοποιημένη ανάλυση των βασικών αρχών για τη δημιουργία επιτυχημένων και παραγωγικών ομάδων.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Κάρτα Δημοσίευσης 2 (Παράδειγμα για μελλοντικό άρθρο) -->
+                <div class="post-card">
+                    <a href="#">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Εικόνα+Άρθρου" alt="Εικόνα για νέο άρθρο" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="post-tag">Τεχνολογία</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2">Το Μέλλον της Τεχνητής Νοημοσύνης</h3>
+                            <p class="text-gray-600 text-sm">Μια ματιά στις επερχόμενες τάσεις και πώς θα επηρεάσουν την καθημερινότητά μας.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Κάρτα Δημοσίευσης 3 (Παράδειγμα για μελλοντικό άρθρο) -->
+                <div class="post-card">
+                    <a href="#">
+                        <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Εικόνα+Άρθρου" alt="Εικόνα για νέο άρθρο" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="post-tag">Παραγωγικότητα</span>
+                            <h3 class="text-xl font-bold mt-4 mb-2">5 Εργαλεία που Απογείωσαν την Ημέρα μου</h3>
+                            <p class="text-gray-600 text-sm">Ανακαλύψτε τις εφαρμογές και τις τεχνικές που με βοήθησαν να διπλασιάσω την απόδοσή μου.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Υποσέλιδο -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 Γιώργος Μανωλάτος. Με επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
